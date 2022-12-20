@@ -1,0 +1,17 @@
+.navbar{
+    width: 100%;
+    background-color: gray;
+    overflow: auto;
+}
+.navbar a{
+    float: right;
+    text-align: center;
+    padding: 12px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navbar a:hover{
+    color: yellow;
+    transition: 1s;
+}
