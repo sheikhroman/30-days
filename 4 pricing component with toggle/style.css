@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15;
+    min-height: 100vh;
+    background-color: hsla(184, 61%, 80%, 0.473);
+    background-repeat: no-repeat;
+    background-image: url(https://digitshack.com/codepen/mentor9/bg-top.svg),
+        url(https://digitshack.com/codepen/mentor9/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right top,
+        left bottom;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.wrapper{
+    padding: 60px 20px;
+    text-align: center;
+
+}
+.title{
+    font-size: 12px;
+    color: hsl(233, 13%, 49%);
+}
+.switch input {
+    opacity: 0;
+}
+
+.switch {
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+    position: relative;
+    cursor: pointer;
+}
+.slider {
+    position: absolute;
+    background: linear-gradient(180deg,
+            hsl(236, 72%, 79%),
+            hsl(237, 63%, 64%));
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 35px;
+}
+
+.slider:hover {
+    background: hsl(236, 72%, 79%)
+}
+.slider::before {
+    position: absolute;
+    content: '';
+    background-color: #FFF;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    transition: 1s;
+}
+
+input:checked+.slider::before {
+    transform: translateX(26px);
+}
+.pricing{
+    color: hsl(234, 14%, 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.pricing label{
+    margin: 0 20px;
+}
+.pricing-main{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+}
+.pricing-box{
+    background-color: #FFF;
+    padding: 50px 40px;
+    border-radius: 12px;
+    align-self: center;
+}
+.box-title{
+    color: hsl(233, 13%, 49%);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.price-anually,price-monthly{
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(233, 13%, 32%);
+}
+.price-monthly{
+    display: none;
+}
+.price{
+    font-size: 65px;
+    padding-left: 7px;
+}
+ul{
+    list-style: none;
+    padding: 35px 0;
+}
+ul li{
+    color: hsl(233, 13%, 33%);
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+    padding: 15px 0;
+}
+ul li:first-child{
+    border-top: 1px solid hsl(234, 14%, 74%);
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%));
+    width: 100%;
+    display: block;
+    padding: 16px 0;
+    color: #FFF;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+a:hover{
+    background: transparent;
+    color: hsl(237, 63%, 64%);
+    border-color: hsl(236, 72%, 79%);
+    transition: 1s;
+}
+.pricing-box.feature{
+    background: linear-gradient(180deg,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%));
+    padding: 80px 40px;
+    transform: scaleX(1.05);
+}
+.pricing-box.feature p{
+    color: #fff;
+}
+.pricing-box.feature ul li{
+    columns: #fff;
+}
+.pricing-box.feature a{
+    background: #fff;
+    color: hsl(237, 63%, 64%);
+}
+.pricing-box.feature a:hover{
+    color: #FFF;
+    background: transparent;
+    border-color: #FFF;
+}
+@media only screen and (max-width: 1024px){
+    .pricing-main{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .price{
+        font-size: 50px;
+    }
+    .pricing-box{
+        padding: 40px 30px;
+    }
+    .pricing-box.feature{
+        transform: scaleX(1);
+        padding: 50px;
+    }
+}
