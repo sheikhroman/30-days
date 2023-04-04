@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins:wght@300;400;500;600;700&display=swap');}
+:root{
+    --bg-main: #464646;
+    --bg-card:#2D2727;
+    --border-color:#efc745;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    height: 100vh;
+    background-color: var(--bg-main);
+}
+.card{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--bg-card);
+    background-size: contain;
+    border-radius: .6rem;
+    box-shadow: rgba(149, 157, 165,0.2)0px 8px 24px;
+    padding: 2rem;
+}
+h1{
+    color: #fff;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 4rem;
+}
+span{
+    color: var(--border-color);
+}
