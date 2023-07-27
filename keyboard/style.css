@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  input {
+    margin: 5px;
+    padding: 5px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    background: linear-gradient(180deg, #282828, #202020);
+    color: #fff;
+    box-shadow: 0 2px 0 2px #000, 10px 10px 15px #000000da;
+  }
+  input:active {
+    box-shadow: 0 0 5px #000;
+  }
+  #btnBack {
+    width: 110px;
+    font-size: 14px;
+  }
+  #btnTab {
+    font-size: 14px;
+    width: 110px;
+  }
+  #btnCaps {
+    font-size: 14px;
+    width: 125px;
+  }
+  #btnEnter {
+    font-size: 14px;
+    width: 110px;
+  }
+  .btnShift {
+    font-size: 14px;
+    width: 152px;
+  }
+  .btn_down {
+    font-size: 14px;
+    width: 85px;
+  }
+  #btn_space {
+    font-size: 14px;
+    width: 410px;
+  }
+  
